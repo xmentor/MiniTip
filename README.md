@@ -3,7 +3,7 @@
 ## Download
 [MiniTip - download link](https://github.com/minitip/archive/master.zip)
 
-## Instalation
+## Installation
 Add style to head, but script add to body.
 ```html
 <!DOCTYPE html>
