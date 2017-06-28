@@ -1,7 +1,7 @@
 # MiniTip
 
 ## Download
-[MiniTip - download link](https://github.com/minitip/archive/master.zip)
+[MiniTip - download link](https://github.com/xmentor/MiniTip/archive/master.zip)
 
 ## Installation
 Add style to head, but script add to body.
