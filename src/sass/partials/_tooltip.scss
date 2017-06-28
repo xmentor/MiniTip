@@ -1,0 +1,36 @@
+.minitip{
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: $tip-bg-color;
+    color: $tip-text-color;
+    font-family: $tip-font;
+    font-size: $tip-font-size;
+    border-radius: $tip-radius;
+    pointer-events: none;
+    visibility: hidden;
+    max-width: 250px;
+    &_visible {
+        visibility: visible;
+        padding: $tip-padding;
+    }
+    &_arrow-top{
+        &:after{
+            @include triangle(top, $tip-size-triangle, $tip-bg-color);
+        }
+    }
+    &_arrow-bottom{
+        &:after{
+            @include triangle(bottom, $tip-size-triangle, $tip-bg-color);
+        }
+    }
+    &_arrow-right{
+        &:after{
+            @include triangle(right, $tip-size-triangle, $tip-bg-color);
+        }
+    }
+    &_arrow-left{
+        &:after{
+            @include triangle(left, $tip-size-triangle, $tip-bg-color);
+        }
+    }
+}

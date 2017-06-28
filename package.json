@@ -1,0 +1,33 @@
+{
+  "name": "minitip",
+  "version": "1.0.0",
+  "description": "Simple and lightweight tooltip",
+  "main": "dist/js/minitip.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmentor/MiniTip.git"
+  },
+  "keywords": [
+    "tooltip",
+    "simple tooltip"
+  ],
+  "author": "Kamil Kondratowicz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xmentor/MiniTip/issues"
+  },
+  "homepage": "https://github.com/xmentor/MiniTip#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-closure-compiler": "^0.4.0",
+    "gulp-copy": "^1.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-string-replace": "^0.4.0"
+  }
+}
