@@ -1,5 +1,8 @@
 # MiniTip
 
+## Examples
+[See examples](https://xmentor.github.io/MiniTip/#examples)
+
 ## Download
 [MiniTip - download link](https://github.com/xmentor/MiniTip/archive/master.zip)
 
