@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MiniTip</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../dist/css/minitip.css">
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__logo logo">
+                <a href="index.html" class="logo__link">MiniTip</a>
+            </h1>
+            <nav class="header__nav nav">
+                <h2 class="sr-only">Menu</h2>
+                <ul class="nav__menu menu">
+                    <li class="menu__item"><a href="#download" class="menu__link">Download</a></li>
+                    <li class="menu__item"><a href="#installation" class="menu__link">Installation</a></li>
+                    <li class="menu__item"><a href="#basic-usage" class="menu__link">Basic usage</a></li>
+                    <li class="menu__item"><a href="#examples" class="menu__link">Examples</a></li>
+                    <li class="menu__item"><a href="#todo" class="menu__link">Todo</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section" id="download" tabindex="-1">
+                <h2 class="section__title">Download</h2>
+                <div class="section__content">
+                    <a href="https://github.com/xmentor/MiniTip/archive/master.zip">MiniTip &mdash; download file</a>
+                </div>
+            </section>
+            <section class="section" id="installation" tabindex="-1">
+                <h2 class="section__title">Installation</h2>
+                <div class="section__content">
+                    <p class="section__paragraph">
+                        Add style to head, but script add to body.
+                    </p>
+                    <pre>
+<code class="language-markup">&lt;!DOCTYPE html>
+&lt;html lang="en">
+    &lt;head>
+        &lt;!-- meta tags -->
+        &lt;link rel="stylesheet" href="path/minitip.css">
+        &lt;!-- your styles -->
+    &lt;/head>
+    &lt;body>
+        &lt;!-- some scripts -->
+        &lt;script src="path/minitip.min.js">&lt;/script>
+    &lt;/body>
+&lt;/html></code></pre>
+            </div>
+            </section>
+            <section class="section" id="basic-usage" tabindex="-1">
+                <h2 class="section__title">Basic usage</h2>
+                <div class="section__content">
+                    <p class="section__paragraph">
+                        You just have to add attribute <code class="language-markup">data-tip="with content"</code> to your tags.
+                    </p>
+                    <p class="section__paragraph">
+                        For example:
+                    </p>
+                    <pre><code class="language-markup">&lt;input type="text" id="number" data-tip="Give me your phone number! Format: 000-000-000"></code></pre>
+                    <p class="section__paragraph">
+                        or:
+                    </p>
+                    <pre><code class="language-markup">&lt;button data-tip="Close the dialog">Close&lt;/button></code></pre>
+                </div>
+            </section>
+            <section class="section" id="examples" tabindex="-1">
+                <h2 class="section__title">Examples</h2>
+                <div class="section__content">
+                    <a href="index.html" data-tip="Go to home page">Home</a>
+                    <form class="form">
+                        <div class="form__row">
+                            <label for="birthdate" class="form__label">Date of birth:</label>
+                            <input type="text" class="form__input" id="birthdate" name="birthdate" data-tip="Format: month.day.year">
+                        </div>
+                        <button class="button" type="button">Send</button>
+                    </form>
+                   <button class="button" data-tip="Open box with image">Open</button>
+                </div>
+            </section>
+            <section class="section section_last" id="todo" tabindex="-1">
+                <h2 class="section__title">Todo</h2>
+                <div class="section__content">
+                    <ul>
+                        <li>add check if the tip is outside the window</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <script src="js/prism.js"></script>
+        <script src="../dist/js/minitip.min.js"></script>
+    </body>
+</html>

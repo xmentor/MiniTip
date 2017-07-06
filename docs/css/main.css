@@ -1,0 +1,146 @@
+html{
+    line-height: 1.5;
+}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fafafa;
+}
+a{
+    color: #272822;
+}
+.sr-only{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.header{
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #272822;
+}
+.logo{
+    margin: 0;
+    padding: 25px 0;
+    text-align: center;
+    color: #fafafa;
+    letter-spacing: 3px;
+}
+.logo__link{
+    color: inherit;
+    text-decoration: none;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu__link{
+    padding: 15px;
+    display: block;
+    color: #fafafa;
+    transition: background-color .1s ease-in, color .1s ease-in;
+}
+.menu__link:hover,
+.menu__link:focus{
+    background-color: #fafafa;
+    color: #272822;
+}
+.main{
+    padding: 0 32px;
+    margin-left: 280px;
+    display: block;
+}
+
+.footer{
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer__link{
+    color: #fafafa;
+}
+.section{
+    padding-bottom: 45px;
+    outline: 0;
+}
+.section_last{
+    padding-bottom: 0;
+}
+.section__content{
+    padding: 0 25px;
+}
+.form{
+    margin: 40px 0;
+}
+.form__label{
+    display: block;
+}
+.form__input{
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+.form__input:hover,
+.form__input:focus{
+    box-shadow: 0 0 3px #F92672;
+}
+.button{
+    width: 150px;
+    padding: 8px 0;
+    border: 2px solid #F92672;
+    font-size: 18px;
+    color: #fefefe;
+    margin: 0;
+    border-radius: 2px;
+    background-color: #F92672;
+    cursor: pointer;
+    transition: background-color .1s ease-in, color .1s ease-in;
+}
+.button::-moz-focus-inner{
+    border: 0;
+}
+.button:hover,
+.button:focus{
+    background-color: #fefefe;
+    color: #F92672;
+}
+@media (max-width: 768px) {
+    .header{
+        width: 200px;
+    }
+    .main{
+        padding: 0 16px;
+        margin-left: 200px;
+    }
+}
+@media (max-width: 640px) {
+    .header{
+        width: auto;
+        position: static;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .main{
+        margin-left: 0;
+    }
+}
