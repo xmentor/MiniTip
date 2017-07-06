@@ -6,6 +6,7 @@
     const cssmin = require('gulp-cssmin');
     const eslint = require('gulp-eslint');
     const closureCompiler = require('gulp-closure-compiler');
+    const copy = require('gulp-copy');
     
     const jsCompilerOptions = {
         fileName: 'minitip.min.js',
@@ -50,7 +51,12 @@
             .pipe(gulp.dest('dist/js'));
     });
     
-    gulp.task('default', ['jsCompiler']);
+    gulp.task('copy', ['jsCompiler'], () => {
+        return gulp.src(['dist/css/**', 'dist/js/**'])
+            .pipe(copy('docs', {prefix: 1}));
+    });
+    
+    gulp.task('default', ['copy']);
     
     gulp.watch(['src/js/**', 'src/sass/**'], ['default']);
               
